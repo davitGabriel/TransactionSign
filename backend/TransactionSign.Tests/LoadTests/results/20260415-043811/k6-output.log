@@ -1,0 +1,169 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Tests\LoadTests\k6-workflow.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 31 max VUs, 30m5s max duration (incl. graceful stop):
+              * monitor: 1 looping VUs for 30m0s (exec: monitorCompletion)
+              * signers: 30 looping VUs for 30m0s (exec: signerFlow, gracefulStop: 5s)
+
+time="2026-04-15T04:38:11+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:11.954Z\",\"kind\":\"sign_fail\",\"userId\":19,\"txId\":3,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:12+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:12.012Z\",\"kind\":\"sign_fail\",\"userId\":26,\"txId\":2,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:12+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:12.053Z\",\"kind\":\"sign_fail\",\"userId\":18,\"txId\":2,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:12+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:12.077Z\",\"kind\":\"sign_fail\",\"userId\":4,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:12+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:12.095Z\",\"kind\":\"sign_fail\",\"userId\":28,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:12+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:12.106Z\",\"kind\":\"sign_fail\",\"userId\":13,\"txId\":2244,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:12+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:12.153Z\",\"kind\":\"sign_fail\",\"userId\":30,\"txId\":3,\"error\":\"Transaction not eligible for signing\"}" source=console
+
+running (00m01.0s), 31/31 VUs, 21 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m01.0s/30m0s
+signers   [   0% ] 30 VUs  00m01.0s/30m0s
+
+running (00m02.0s), 31/31 VUs, 21 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m02.0s/30m0s
+signers   [   0% ] 30 VUs  00m02.0s/30m0s
+
+running (00m03.0s), 31/31 VUs, 21 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m03.0s/30m0s
+signers   [   0% ] 30 VUs  00m03.0s/30m0s
+
+running (00m04.0s), 31/31 VUs, 21 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m04.0s/30m0s
+signers   [   0% ] 30 VUs  00m04.0s/30m0s
+time="2026-04-15T04:38:16+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:16.085Z\",\"kind\":\"sign_fail\",\"userId\":20,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+
+running (00m05.0s), 31/31 VUs, 23 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m05.0s/30m0s
+signers   [   0% ] 30 VUs  00m05.0s/30m0s
+
+running (00m06.0s), 31/31 VUs, 24 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m06.0s/30m0s
+signers   [   0% ] 30 VUs  00m06.0s/30m0s
+
+running (00m07.0s), 31/31 VUs, 24 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m07.0s/30m0s
+signers   [   0% ] 30 VUs  00m07.0s/30m0s
+
+running (00m08.0s), 31/31 VUs, 24 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m08.0s/30m0s
+signers   [   0% ] 30 VUs  00m08.0s/30m0s
+
+running (00m09.0s), 31/31 VUs, 24 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m09.0s/30m0s
+signers   [   0% ] 30 VUs  00m09.0s/30m0s
+time="2026-04-15T04:38:20+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:20.957Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2246,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:20+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:20.958Z\",\"kind\":\"sign_fail\",\"userId\":17,\"txId\":2246,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:20+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:20.961Z\",\"kind\":\"sign_fail\",\"userId\":24,\"txId\":2246,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:20+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:20.966Z\",\"kind\":\"sign_fail\",\"userId\":11,\"txId\":2246,\"error\":\"Signature limit reached\"}" source=console
+
+running (00m10.0s), 31/31 VUs, 30 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m10.0s/30m0s
+signers   [   1% ] 30 VUs  00m10.0s/30m0s
+
+running (00m11.0s), 31/31 VUs, 31 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m11.0s/30m0s
+signers   [   1% ] 30 VUs  00m11.0s/30m0s
+
+running (00m12.0s), 31/31 VUs, 31 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m12.0s/30m0s
+signers   [   1% ] 30 VUs  00m12.0s/30m0s
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.470Z\",\"kind\":\"sign_fail\",\"userId\":22,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.471Z\",\"kind\":\"sign_fail\",\"userId\":24,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.471Z\",\"kind\":\"sign_fail\",\"userId\":9,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.477Z\",\"kind\":\"sign_fail\",\"userId\":6,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.478Z\",\"kind\":\"sign_fail\",\"userId\":3,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.508Z\",\"kind\":\"sign_fail\",\"userId\":17,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.523Z\",\"kind\":\"sign_fail\",\"userId\":11,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.523Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.546Z\",\"kind\":\"sign_fail\",\"userId\":25,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.546Z\",\"kind\":\"sign_fail\",\"userId\":27,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.547Z\",\"kind\":\"sign_fail\",\"userId\":16,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.621Z\",\"kind\":\"sign_fail\",\"userId\":13,\"txId\":2247,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.698Z\",\"kind\":\"sign_fail\",\"userId\":21,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.708Z\",\"kind\":\"sign_fail\",\"userId\":15,\"txId\":2247,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.720Z\",\"kind\":\"sign_fail\",\"userId\":32,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.755Z\",\"kind\":\"sign_fail\",\"userId\":28,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.755Z\",\"kind\":\"sign_fail\",\"userId\":26,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.771Z\",\"kind\":\"sign_fail\",\"userId\":8,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.800Z\",\"kind\":\"sign_fail\",\"userId\":5,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.825Z\",\"kind\":\"sign_fail\",\"userId\":18,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.860Z\",\"kind\":\"sign_fail\",\"userId\":14,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.877Z\",\"kind\":\"sign_fail\",\"userId\":12,\"txId\":2247,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.879Z\",\"kind\":\"sign_fail\",\"userId\":4,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.935Z\",\"kind\":\"sign_fail\",\"userId\":23,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:23.967Z\",\"kind\":\"sign_fail\",\"userId\":31,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T04:38:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:24.040Z\",\"kind\":\"sign_fail\",\"userId\":10,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+
+running (00m13.0s), 31/31 VUs, 71 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m13.0s/30m0s
+signers   [   1% ] 30 VUs  00m13.0s/30m0s
+
+running (00m14.0s), 31/31 VUs, 110 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m14.0s/30m0s
+signers   [   1% ] 30 VUs  00m14.0s/30m0s
+time="2026-04-15T04:38:25+04:00" level=info msg="{\"level\":\"info\",\"action\":\"complete\",\"message\":\"All transactions signed\",\"ts\":\"2026-04-15T00:38:25.531Z\"}" source=console
+
+running (00m15.0s), 31/31 VUs, 146 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m15.0s/30m0s
+signers   [   1% ] 30 VUs  00m15.0s/30m0s
+
+running (00m16.0s), 31/31 VUs, 181 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m16.0s/30m0s
+signers   [   1% ] 30 VUs  00m16.0s/30m0s
+
+running (00m17.0s), 31/31 VUs, 223 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m17.0s/30m0s
+signers   [   1% ] 30 VUs  00m17.0s/30m0s
+time="2026-04-15T04:38:28+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T00:38:28.531Z\",\"kind\":\"pending_error\",\"userId\":4,\"status\":0}" source=console
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.10' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 355     20.724805/s
+    checks_succeeded...: 100.00% 355 out of 355
+    checks_failed......: 0.00%   0 out of 355
+
+    ✓ pending 200
+    ✓ sign 200
+
+    CUSTOM
+    signing_duration_ms............: avg=2408.344828 min=2        med=21.5     max=11457  p(90)=9568.9 p(95)=10835.35
+    successful_signs...............: 20     1.167595/s
+    workflow_failures..............: 38     2.21843/s
+
+    HTTP
+    http_req_duration..............: avg=970.33ms    min=342.8µs  med=3.12ms   max=11.66s p(90)=2.89s  p(95)=10.69s  
+      { expected_response:true }...: avg=970.33ms    min=342.8µs  med=3.12ms   max=11.66s p(90)=2.89s  p(95)=10.69s  
+    http_req_failed................: 0.00%  0 out of 355
+    http_reqs......................: 355    20.724805/s
+
+    EXECUTION
+    iteration_duration.............: avg=2.26s       min=294.18ms med=835.02ms max=17.12s p(90)=9.56s  p(95)=11.81s  
+    iterations.....................: 230    13.427339/s
+    vus............................: 31     min=31       max=31
+    vus_max........................: 31     min=31       max=31
+
+    NETWORK
+    data_received..................: 194 kB 11 kB/s
+    data_sent......................: 43 kB  2.5 kB/s
+
+
+
+
+running (00m17.1s), 00/31 VUs, 229 complete and 31 interrupted iterations
+monitor ✗ [   1% ] 1 VUs   00m17.1s/30m0s
+signers ✗ [   1% ] 30 VUs  00m17.1s/30m0s
+time="2026-04-15T04:38:28+04:00" level=error msg="test aborted: All transactions signed - test complete at monitorCompletion (file:///C:/Users/Davit%20Gabrielyan/source/repos/TransactionSign/backend/TransactionSign.Tests/LoadTests/k6-workflow.js:177:24(88))"

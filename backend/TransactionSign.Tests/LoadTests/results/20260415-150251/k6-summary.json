@@ -1,0 +1,153 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "avg": 11.68828037383177,
+            "min": 0.8865,
+            "med": 2.8582,
+            "max": 106.6266,
+            "p(90)": 37.42956000000002,
+            "p(95)": 54.98953999999997
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "http_req_waiting": {
+            "avg": 11.01893644859813,
+            "min": 0.5301,
+            "med": 2.4212,
+            "max": 105.1973,
+            "p(90)": 37.42956000000002,
+            "p(95)": 54.29002999999999
+        },
+        "checks": {
+            "passes": 107,
+            "fails": 0,
+            "value": 1
+        },
+        "iteration_duration": {
+            "avg": 783.8821575757576,
+            "min": 313.4665,
+            "med": 731.1747,
+            "max": 5023.7103,
+            "p(90)": 929.95695,
+            "p(95)": 991.0636999999999
+        },
+        "vus": {
+            "min": 11,
+            "max": 11,
+            "value": 11
+        },
+        "workflow_failures": {
+            "count": 10,
+            "rate": 1.9901514965013831
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0,
+            "max": 1.3078,
+            "p(90)": 0,
+            "p(95)": 0.6870299999999993,
+            "avg": 0.06589719626168225
+        },
+        "http_req_sending": {
+            "min": 0,
+            "med": 0,
+            "max": 1.0069,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.02657196261682243
+        },
+        "vus_max": {
+            "value": 11,
+            "min": 11,
+            "max": 11
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 54.98953999999997,
+            "avg": 11.68828037383177,
+            "min": 0.8865,
+            "med": 2.8582,
+            "max": 106.6266,
+            "p(90)": 37.42956000000002
+        },
+        "http_req_receiving": {
+            "med": 0.495,
+            "max": 6.638,
+            "p(90)": 1.43572,
+            "p(95)": 1.704139999999999,
+            "avg": 0.6427719626168226,
+            "min": 0
+        },
+        "data_received": {
+            "count": 51959,
+            "rate": 10340.628160671537
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 107,
+            "thresholds": {
+                "rate<0.10": false
+            },
+            "value": 0
+        },
+        "signing_duration_ms": {
+            "avg": 22.625,
+            "min": 2,
+            "med": 12,
+            "max": 96,
+            "p(90)": 52.7,
+            "p(95)": 55.55
+        },
+        "http_reqs": {
+            "rate": 21.2946210125648,
+            "count": 107
+        },
+        "iterations": {
+            "count": 66,
+            "rate": 13.134999876909129
+        },
+        "successful_signs": {
+            "count": 14,
+            "rate": 2.7862120951019365
+        },
+        "data_sent": {
+            "count": 13359,
+            "rate": 2658.6433841761977
+        },
+        "http_req_connecting": {
+            "avg": 0.0428018691588785,
+            "min": 0,
+            "med": 0,
+            "max": 1.3078,
+            "p(90)": 0,
+            "p(95)": 0.32734
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "pending 200": {
+                    "passes": 83,
+                    "fails": 0,
+                    "name": "pending 200",
+                    "path": "::pending 200",
+                    "id": "b56fb7fa7af881d17528927b8baea20e"
+                },
+                "sign 200": {
+                    "id": "ba3cb22db9cc6e8535c40d67972cc1ad",
+                    "passes": 24,
+                    "fails": 0,
+                    "name": "sign 200",
+                    "path": "::sign 200"
+                }
+            }
+    }
+}

@@ -1,0 +1,102 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Tests\LoadTests\k6-workflow.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 11 max VUs, 30m5s max duration (incl. graceful stop):
+              * monitor: 1 looping VUs for 30m0s (exec: monitorCompletion)
+              * signers: 10 looping VUs for 30m0s (exec: signerFlow, gracefulStop: 5s)
+
+time="2026-04-15T13:26:56+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:56.562Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2245,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T13:26:56+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:56.708Z\",\"kind\":\"sign_fail\",\"userId\":3,\"txId\":2245,\"error\":\"Signature limit reached\"}" source=console
+
+running (00m01.0s), 11/11 VUs, 10 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m01.0s/30m0s
+signers   [   0% ] 10 VUs  00m01.0s/30m0s
+time="2026-04-15T13:26:57+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:57.502Z\",\"kind\":\"sign_fail\",\"userId\":1,\"txId\":2246,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:57+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:57.539Z\",\"kind\":\"sign_fail\",\"userId\":9,\"txId\":2244,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:57+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:57.574Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2244,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+
+running (00m02.0s), 11/11 VUs, 22 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m02.0s/30m0s
+signers   [   0% ] 10 VUs  00m02.0s/30m0s
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.020Z\",\"kind\":\"sign_fail\",\"userId\":8,\"txId\":2251,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.022Z\",\"kind\":\"sign_fail\",\"userId\":9,\"txId\":2251,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.065Z\",\"kind\":\"sign_fail\",\"userId\":6,\"txId\":2251,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.094Z\",\"kind\":\"sign_fail\",\"userId\":2,\"txId\":2251,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.113Z\",\"kind\":\"sign_fail\",\"userId\":3,\"txId\":2251,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.209Z\",\"kind\":\"sign_fail\",\"userId\":5,\"txId\":2,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+time="2026-04-15T13:26:58+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T09:26:58.354Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2,\"error\":\"Transaction not eligible for signing, Already Finalized!\"}" source=console
+
+running (00m03.0s), 11/11 VUs, 38 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m03.0s/30m0s
+signers   [   0% ] 10 VUs  00m03.0s/30m0s
+
+running (00m04.0s), 11/11 VUs, 51 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m04.0s/30m0s
+signers   [   0% ] 10 VUs  00m04.0s/30m0s
+time="2026-04-15T13:26:59+04:00" level=info msg="{\"level\":\"info\",\"action\":\"complete\",\"message\":\"All transactions signed\",\"ts\":\"2026-04-15T09:26:59.942Z\"}" source=console
+
+running (00m05.0s), 11/11 VUs, 63 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m05.0s/30m0s
+signers   [   0% ] 10 VUs  00m05.0s/30m0s
+
+running (00m06.0s), 11/11 VUs, 74 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m06.0s/30m0s
+signers   [   0% ] 10 VUs  00m06.0s/30m0s
+
+running (00m07.0s), 11/11 VUs, 90 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m07.0s/30m0s
+signers   [   0% ] 10 VUs  00m07.0s/30m0s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.10' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 135     19.180157/s
+    checks_succeeded...: 100.00% 135 out of 135
+    checks_failed......: 0.00%   0 out of 135
+
+    ✓ pending 200
+    ✓ sign 200
+
+    CUSTOM
+    signing_duration_ms............: avg=49.0625  min=2        med=15.5     max=339      p(90)=114.9    p(95)=192.15  
+    successful_signs...............: 20    2.841505/s
+    workflow_failures..............: 12    1.704903/s
+
+    HTTP
+    http_req_duration..............: avg=15.42ms  min=787.1µs  med=3.51ms   max=338.57ms p(90)=20.07ms  p(95)=70.07ms 
+      { expected_response:true }...: avg=15.42ms  min=787.1µs  med=3.51ms   max=338.57ms p(90)=20.07ms  p(95)=70.07ms 
+    http_req_failed................: 0.00% 0 out of 135
+    http_reqs......................: 135   19.180157/s
+
+    EXECUTION
+    iteration_duration.............: avg=828.03ms min=314.14ms med=774.57ms max=7.03s    p(90)=936.67ms p(95)=975.64ms
+    iterations.....................: 91    12.928846/s
+    vus............................: 11    min=11       max=11
+    vus_max........................: 11    min=11       max=11
+
+    NETWORK
+    data_received..................: 83 kB 12 kB/s
+    data_sent......................: 17 kB 2.4 kB/s
+
+
+
+
+running (00m07.1s), 00/11 VUs, 90 complete and 11 interrupted iterations
+monitor ✗ [   0% ] 1 VUs   00m07.0s/30m0s
+signers ✗ [   0% ] 10 VUs  00m07.0s/30m0s
+time="2026-04-15T13:27:03+04:00" level=error msg="test aborted: All transactions signed - test complete at monitorCompletion (file:///C:/Users/Davit%20Gabrielyan/source/repos/TransactionSign/backend/TransactionSign.Tests/LoadTests/k6-workflow.js:177:24(88))"

@@ -1,0 +1,114 @@
+<!-- Toast Notifications -->
+<div class="toast-container">
+  <div *ngFor="let toast of toasts"
+       class="toast"
+       [class.toast-info]="toast.type === 'info'"
+       [class.toast-success]="toast.type === 'success'"
+       [class.toast-warning]="toast.type === 'warning'"
+       (click)="removeToast(toast.id)">
+    {{ toast.message }}
+  </div>
+</div>
+
+<div class="container">
+  <h1>Transaction Signing System</h1>
+
+  <div class="user-selector">
+    <label>User ID:</label>
+    <input type="number" [(ngModel)]="userId" min="1" (change)="setUserId()">
+  </div>
+
+  <div class="tabs">
+    <button [class.active]="activeTab === 'pending'" (click)="switchTab('pending')">Txn</button>
+    <button [class.active]="activeTab === 'completed'" (click)="switchTab('completed')">Transactions</button>
+  </div>
+
+  <!-- Tab 1: Pending Transactions (To Sign) -->
+  <div *ngIf="activeTab === 'pending'" class="tab-content">
+    <div class="header-row">
+      <h2>To Sign</h2>
+      <button class="sign-btn" [disabled]="!hasSelection" (click)="signSelected()">Sign Selected</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>ID</th>
+          <th>Type</th>
+          <th>Value Date</th>
+          <th>Last Modified Date</th>
+          <th>Reason</th>
+          <th>Company</th>
+          <th>Counterparty</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Internal Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let txn of pendingTransactions"
+            [class.fully-signed]="txn.signatureCount >= txn.requiredSignatures">
+          <td>
+            <input
+              *ngIf="txn.status === 6 && txn.internalStatus === 2 && txn.canSign"
+              type="checkbox"
+              [checked]="isSelected(txn.id)"
+              (change)="toggleSelection(txn.id)">
+          </td>
+          <td>{{ txn.id }}</td>
+          <td>{{ txn.type }}</td>
+          <td>{{ formatDate(txn.valueDate) }}</td>
+          <td>{{ formatDate(txn.lastModifiedDate) }}</td>
+          <td>{{ txn.reason }}</td>
+          <td>{{ txn.company }}</td>
+          <td>{{ txn.counterparty }}</td>
+          <td>{{ txn.amount | number:'1.2-2' }}</td>
+          <td>{{ txn.status === 6 ? 'Internal' : 'Completed' }}</td>
+          <td>
+            <span *ngIf="txn.signatureCount < txn.requiredSignatures">
+              To Sign ({{ txn.signatureCount }}/{{ txn.requiredSignatures }})
+            </span>
+            <span *ngIf="txn.signatureCount >= txn.requiredSignatures">
+              Signed ({{ txn.signatureCount }}/{{ txn.requiredSignatures }})
+              <span class="fully-signed-badge">Complete</span>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p *ngIf="pendingTransactions.length === 0" class="no-data">No transactions to sign</p>
+  </div>
+
+  <!-- Tab 2: Completed Transactions -->
+  <div *ngIf="activeTab === 'completed'" class="tab-content">
+    <div class="header-row">
+      <h2>Completed Transactions</h2>
+      <button class="restore-btn" (click)="restoreAllTransactions()">Restore Transactions</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Amount</th>
+          <th>Fee</th>
+          <th>Settlement Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let txn of completedTransactions">
+          <td>{{ txn.id }}</td>
+          <td>{{ txn.amount | number:'1.2-2' }}</td>
+          <td>{{ txn.fee | number:'1.2-2' }}</td>
+          <td>{{ txn.settlementAmount | number:'1.2-2' }}</td>
+          <td>{{ txn.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p *ngIf="completedTransactions.length === 0" class="no-data">No completed transactions</p>
+  </div>
+</div>

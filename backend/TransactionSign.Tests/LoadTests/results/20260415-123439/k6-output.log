@@ -1,0 +1,76 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Tests\LoadTests\k6-workflow.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 11 max VUs, 30m5s max duration (incl. graceful stop):
+              * monitor: 1 looping VUs for 30m0s (exec: monitorCompletion)
+              * signers: 10 looping VUs for 30m0s (exec: signerFlow, gracefulStop: 5s)
+
+
+running (00m01.0s), 11/11 VUs, 10 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m01.0s/30m0s
+signers   [   0% ] 10 VUs  00m01.0s/30m0s
+
+running (00m02.0s), 11/11 VUs, 20 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m02.0s/30m0s
+signers   [   0% ] 10 VUs  00m02.0s/30m0s
+time="2026-04-15T12:34:42+04:00" level=info msg="{\"level\":\"info\",\"action\":\"complete\",\"message\":\"All transactions signed\",\"ts\":\"2026-04-15T08:34:42.282Z\"}" source=console
+
+running (00m03.0s), 11/11 VUs, 31 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m03.0s/30m0s
+signers   [   0% ] 10 VUs  00m03.0s/30m0s
+
+running (00m04.0s), 11/11 VUs, 46 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m04.0s/30m0s
+signers   [   0% ] 10 VUs  00m04.0s/30m0s
+
+running (00m05.0s), 11/11 VUs, 58 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m05.0s/30m0s
+signers   [   0% ] 10 VUs  00m05.0s/30m0s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.10' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 74      14.69556/s
+    checks_succeeded...: 100.00% 74 out of 74
+    checks_failed......: 0.00%   0 out of 74
+
+    ✓ pending 200
+
+    HTTP
+    http_req_duration..............: avg=2.44ms   min=382.1µs  med=2.49ms   max=3.62ms p(90)=3.3ms    p(95)=3.51ms  
+      { expected_response:true }...: avg=2.44ms   min=382.1µs  med=2.49ms   max=3.62ms p(90)=3.3ms    p(95)=3.51ms  
+    http_req_failed................: 0.00%  0 out of 74
+    http_reqs......................: 74     14.69556/s
+
+    EXECUTION
+    iteration_duration.............: avg=859.07ms min=617.41ms med=801.71ms max=5.03s  p(90)=941.64ms p(95)=974.26ms
+    iterations.....................: 60     11.915319/s
+    vus............................: 11     min=11      max=11
+    vus_max........................: 11     min=11      max=11
+
+    NETWORK
+    data_received..................: 12 kB  2.4 kB/s
+    data_sent......................: 8.0 kB 1.6 kB/s
+
+
+
+
+running (00m05.1s), 00/11 VUs, 59 complete and 11 interrupted iterations
+monitor ✗ [   0% ] 1 VUs   00m05.0s/30m0s
+signers ✗ [   0% ] 10 VUs  00m05.0s/30m0s
+time="2026-04-15T12:34:45+04:00" level=error msg="test aborted: All transactions signed - test complete at monitorCompletion (file:///C:/Users/Davit%20Gabrielyan/source/repos/TransactionSign/backend/TransactionSign.Tests/LoadTests/k6-workflow.js:177:24(88))"

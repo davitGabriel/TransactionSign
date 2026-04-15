@@ -1,0 +1,164 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Tests\LoadTests\k6-workflow.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 31 max VUs, 30m5s max duration (incl. graceful stop):
+              * monitor: 1 looping VUs for 30m0s (exec: monitorCompletion)
+              * signers: 30 looping VUs for 30m0s (exec: signerFlow, gracefulStop: 5s)
+
+
+running (00m01.0s), 31/31 VUs, 0 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m01.0s/30m0s
+signers   [   0% ] 30 VUs  00m01.0s/30m0s
+
+running (00m02.0s), 31/31 VUs, 0 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m02.0s/30m0s
+signers   [   0% ] 30 VUs  00m02.0s/30m0s
+
+running (00m03.0s), 31/31 VUs, 0 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m03.0s/30m0s
+signers   [   0% ] 30 VUs  00m03.0s/30m0s
+
+running (00m04.0s), 31/31 VUs, 1 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m04.0s/30m0s
+signers   [   0% ] 30 VUs  00m04.0s/30m0s
+
+running (00m05.0s), 31/31 VUs, 1 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m05.0s/30m0s
+signers   [   0% ] 30 VUs  00m05.0s/30m0s
+
+running (00m06.0s), 31/31 VUs, 1 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m06.0s/30m0s
+signers   [   0% ] 30 VUs  00m06.0s/30m0s
+
+running (00m07.0s), 31/31 VUs, 1 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m07.0s/30m0s
+signers   [   0% ] 30 VUs  00m07.0s/30m0s
+
+running (00m08.0s), 31/31 VUs, 1 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m08.0s/30m0s
+signers   [   0% ] 30 VUs  00m08.0s/30m0s
+
+running (00m09.0s), 31/31 VUs, 2 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m09.0s/30m0s
+signers   [   0% ] 30 VUs  00m09.0s/30m0s
+
+running (00m10.0s), 31/31 VUs, 2 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m10.0s/30m0s
+signers   [   1% ] 30 VUs  00m10.0s/30m0s
+time="2026-04-15T05:47:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:23.045Z\",\"kind\":\"sign_fail\",\"userId\":9,\"txId\":2245,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T05:47:23+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:23.045Z\",\"kind\":\"sign_fail\",\"userId\":23,\"txId\":2245,\"error\":\"Signature limit reached\"}" source=console
+
+running (00m11.0s), 31/31 VUs, 8 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m11.0s/30m0s
+signers   [   1% ] 30 VUs  00m11.0s/30m0s
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.364Z\",\"kind\":\"sign_fail\",\"userId\":12,\"txId\":2251,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.364Z\",\"kind\":\"sign_fail\",\"userId\":14,\"txId\":2246,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.365Z\",\"kind\":\"sign_fail\",\"userId\":27,\"txId\":2251,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.365Z\",\"kind\":\"sign_fail\",\"userId\":26,\"txId\":2251,\"error\":\"Signature limit reached\"}" source=console
+
+running (00m12.0s), 31/31 VUs, 16 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m12.0s/30m0s
+signers   [   1% ] 30 VUs  00m12.0s/30m0s
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.944Z\",\"kind\":\"sign_fail\",\"userId\":21,\"txId\":2247,\"error\":\"Signature limit reached\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.955Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2247,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.955Z\",\"kind\":\"sign_fail\",\"userId\":19,\"txId\":4,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.955Z\",\"kind\":\"sign_fail\",\"userId\":31,\"txId\":4,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:24+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:24.955Z\",\"kind\":\"sign_fail\",\"userId\":6,\"txId\":4,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.422Z\",\"kind\":\"sign_fail\",\"userId\":32,\"txId\":1,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.422Z\",\"kind\":\"sign_fail\",\"userId\":30,\"txId\":3,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.424Z\",\"kind\":\"sign_fail\",\"userId\":17,\"txId\":3,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.424Z\",\"kind\":\"sign_fail\",\"userId\":24,\"txId\":1,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.423Z\",\"kind\":\"sign_fail\",\"userId\":16,\"txId\":3,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.424Z\",\"kind\":\"sign_fail\",\"userId\":18,\"txId\":3,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.424Z\",\"kind\":\"sign_fail\",\"userId\":25,\"txId\":2,\"error\":\"Error adding signature: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.469Z\",\"kind\":\"sign_fail\",\"userId\":13,\"txId\":1,\"error\":\"Transaction not eligible for signing\"}" source=console
+
+running (00m13.0s), 31/31 VUs, 38 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m13.0s/30m0s
+signers   [   1% ] 30 VUs  00m13.0s/30m0s
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.639Z\",\"kind\":\"sign_fail\",\"userId\":7,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.653Z\",\"kind\":\"sign_fail\",\"userId\":14,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.675Z\",\"kind\":\"sign_fail\",\"userId\":3,\"txId\":2244,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.678Z\",\"kind\":\"sign_fail\",\"userId\":4,\"txId\":3,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.690Z\",\"kind\":\"sign_fail\",\"userId\":20,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.710Z\",\"kind\":\"sign_fail\",\"userId\":19,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.731Z\",\"kind\":\"sign_fail\",\"userId\":28,\"txId\":4,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.774Z\",\"kind\":\"sign_fail\",\"userId\":21,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.833Z\",\"kind\":\"sign_fail\",\"userId\":11,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.845Z\",\"kind\":\"sign_fail\",\"userId\":5,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.853Z\",\"kind\":\"sign_fail\",\"userId\":6,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.884Z\",\"kind\":\"sign_fail\",\"userId\":29,\"txId\":2244,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.914Z\",\"kind\":\"sign_fail\",\"userId\":26,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.936Z\",\"kind\":\"sign_fail\",\"userId\":12,\"txId\":2244,\"error\":\"Transaction not eligible for signing\"}" source=console
+time="2026-04-15T05:47:25+04:00" level=info msg="{\"level\":\"fail\",\"ts\":\"2026-04-15T01:47:25.999Z\",\"kind\":\"sign_fail\",\"userId\":16,\"txId\":2,\"error\":\"Transaction not eligible for signing\"}" source=console
+
+running (00m14.0s), 31/31 VUs, 75 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m14.0s/30m0s
+signers   [   1% ] 30 VUs  00m14.0s/30m0s
+time="2026-04-15T05:47:27+04:00" level=info msg="{\"level\":\"info\",\"action\":\"complete\",\"message\":\"All transactions signed\",\"ts\":\"2026-04-15T01:47:27.326Z\"}" source=console
+
+running (00m15.0s), 31/31 VUs, 110 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m15.0s/30m0s
+signers   [   1% ] 30 VUs  00m15.0s/30m0s
+
+running (00m16.0s), 31/31 VUs, 146 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m16.0s/30m0s
+signers   [   1% ] 30 VUs  00m16.0s/30m0s
+
+running (00m17.0s), 31/31 VUs, 182 complete and 0 interrupted iterations
+monitor   [   1% ] 1 VUs   00m17.0s/30m0s
+signers   [   1% ] 30 VUs  00m17.0s/30m0s
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✓ 'rate<0.10' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 342     19.241571/s
+    checks_succeeded...: 100.00% 342 out of 342
+    checks_failed......: 0.00%   0 out of 342
+
+    ✓ pending 200
+    ✓ sign 200
+
+    CUSTOM
+    signing_duration_ms............: avg=5903.703704 min=1        med=9193     max=11800  p(90)=11661.1 p(95)=11737.45
+    successful_signs...............: 20     1.125238/s
+    workflow_failures..............: 34     1.912905/s
+
+    HTTP
+    http_req_duration..............: avg=1.06s       min=367.5µs  med=2.77ms   max=11.79s p(90)=1.81s   p(95)=10.59s  
+      { expected_response:true }...: avg=1.06s       min=367.5µs  med=2.77ms   max=11.79s p(90)=1.81s   p(95)=10.59s  
+    http_req_failed................: 0.00%  0 out of 342
+    http_reqs......................: 342    19.241571/s
+
+    EXECUTION
+    iteration_duration.............: avg=2.5s        min=497.28ms med=844.86ms max=17.77s p(90)=11.76s  p(95)=12.4s   
+    iterations.....................: 215    12.096309/s
+    vus............................: 31     min=31       max=31
+    vus_max........................: 31     min=31       max=31
+
+    NETWORK
+    data_received..................: 207 kB 12 kB/s
+    data_sent......................: 41 kB  2.3 kB/s
+
+
+
+
+running (00m17.8s), 00/31 VUs, 214 complete and 59 interrupted iterations
+monitor ✗ [   1% ] 1 VUs   00m17.8s/30m0s
+signers ✗ [   1% ] 30 VUs  00m17.8s/30m0s
+time="2026-04-15T05:47:30+04:00" level=error msg="test aborted: All transactions signed - test complete at monitorCompletion (file:///C:/Users/Davit%20Gabrielyan/source/repos/TransactionSign/backend/TransactionSign.Tests/LoadTests/k6-workflow.js:177:24(88))"

@@ -1,0 +1,153 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "pending 200": {
+                    "id": "b56fb7fa7af881d17528927b8baea20e",
+                    "passes": 288,
+                    "fails": 0,
+                    "name": "pending 200",
+                    "path": "::pending 200"
+                },
+                "sign 200": {
+                    "name": "sign 200",
+                    "path": "::sign 200",
+                    "id": "ba3cb22db9cc6e8535c40d67972cc1ad",
+                    "passes": 60,
+                    "fails": 0
+                }
+            }
+    },
+    "metrics": {
+        "checks": {
+            "passes": 348,
+            "fails": 0,
+            "value": 1
+        },
+        "data_sent": {
+            "count": 42298,
+            "rate": 3206.8556140818796
+        },
+        "iteration_duration": {
+            "avg": 1833.9742175925928,
+            "min": 340.0435,
+            "med": 835.3207,
+            "max": 13186.6864,
+            "p(90)": 7691.1645,
+            "p(95)": 8007.42785
+        },
+        "iterations": {
+            "count": 216,
+            "rate": 16.376207211728357
+        },
+        "http_req_connecting": {
+            "p(95)": 0.506015,
+            "avg": 0.06874913793103447,
+            "min": 0,
+            "med": 0,
+            "max": 6.2041,
+            "p(90)": 0
+        },
+        "http_req_sending": {
+            "max": 1.009,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.013728448275862068,
+            "min": 0,
+            "med": 0
+        },
+        "data_received": {
+            "count": 189084,
+            "rate": 14335.549835289094
+        },
+        "vus": {
+            "value": 31,
+            "min": 31,
+            "max": 31
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 7925.7949,
+            "p(90)": 73.81441000000001,
+            "p(95)": 7132.396975,
+            "avg": 634.9720339080452,
+            "min": 0.4327,
+            "med": 3.7051499999999997
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 348,
+            "thresholds": {
+                "rate<0.10": false
+            },
+            "value": 0
+        },
+        "vus_max": {
+            "min": 31,
+            "max": 31,
+            "value": 31
+        },
+        "signing_duration_ms": {
+            "med": 33.5,
+            "max": 7925,
+            "p(90)": 7394.1,
+            "p(95)": 7739.7,
+            "avg": 2803.9,
+            "min": 1
+        },
+        "http_req_receiving": {
+            "p(90)": 1.02555,
+            "p(95)": 1.6406199999999986,
+            "avg": 0.48545574712643674,
+            "min": 0,
+            "med": 0.3286,
+            "max": 5.2637
+        },
+        "http_reqs": {
+            "count": 348,
+            "rate": 26.38388939667346
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 6.2041,
+            "p(90)": 0,
+            "p(95)": 0.509405,
+            "avg": 0.07750431034482758,
+            "min": 0
+        },
+        "successful_signs": {
+            "count": 20,
+            "rate": 1.5163154825674403
+        },
+        "http_req_duration": {
+            "avg": 634.9720339080452,
+            "min": 0.4327,
+            "med": 3.7051499999999997,
+            "max": 7925.7949,
+            "p(90)": 73.81441000000001,
+            "p(95)": 7132.396975
+        },
+        "http_req_waiting": {
+            "p(95)": 7132.056495,
+            "avg": 634.4728497126436,
+            "min": 0.3887,
+            "med": 3.16015,
+            "max": 7924.7942,
+            "p(90)": 73.66239999999999
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "workflow_failures": {
+            "count": 40,
+            "rate": 3.0326309651348806
+        }
+    }
+}

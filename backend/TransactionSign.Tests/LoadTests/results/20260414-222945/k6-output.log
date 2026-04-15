@@ -1,0 +1,76 @@
+
+         /\      Grafana   /ΓÇ╛ΓÇ╛/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ΓÇ╛ΓÇ╛\ 
+  /          \   |   (  |  (ΓÇ╛)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Tests\LoadTests\k6-workflow.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 31 max VUs, 30m5s max duration (incl. graceful stop):
+              * monitor: 1 looping VUs for 30m0s (exec: monitorCompletion)
+              * signers: 30 looping VUs for 30m0s (exec: signerFlow, gracefulStop: 5s)
+
+
+running (00m01.0s), 31/31 VUs, 0 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m01.0s/30m0s
+signers   [   0% ] 30 VUs  00m01.0s/30m0s
+
+running (00m02.0s), 31/31 VUs, 48 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m02.0s/30m0s
+signers   [   0% ] 30 VUs  00m02.0s/30m0s
+time="2026-04-14T22:29:47+04:00" level=info msg="{\"level\":\"info\",\"action\":\"complete\",\"message\":\"All transactions signed\",\"ts\":\"2026-04-14T18:29:47.956Z\"}" source=console
+
+running (00m03.0s), 31/31 VUs, 85 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m03.0s/30m0s
+signers   [   0% ] 30 VUs  00m03.0s/30m0s
+
+running (00m04.0s), 31/31 VUs, 120 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m04.0s/30m0s
+signers   [   0% ] 30 VUs  00m04.0s/30m0s
+
+running (00m05.0s), 31/31 VUs, 158 complete and 0 interrupted iterations
+monitor   [   0% ] 1 VUs   00m05.0s/30m0s
+signers   [   0% ] 30 VUs  00m05.0s/30m0s
+
+
+  Γûê THRESHOLDS 
+
+    http_req_failed
+    Γ£ô 'rate<0.10' rate=0.00%
+
+
+  Γûê TOTAL RESULTS 
+
+    checks_total.......: 235     44.920903/s
+    checks_succeeded...: 100.00% 235 out of 235
+    checks_failed......: 0.00%   0 out of 235
+
+    Γ£ô pending 200
+
+    HTTP
+    http_req_duration..............: avg=53.36ms  min=431.4┬╡s  med=3.92ms   max=561.38ms p(90)=279.24ms p(95)=415.57ms
+      { expected_response:true }...: avg=53.36ms  min=431.4┬╡s  med=3.92ms   max=561.38ms p(90)=279.24ms p(95)=415.57ms
+    http_req_failed................: 0.00% 0 out of 235
+    http_reqs......................: 235   44.920903/s
+
+    EXECUTION
+    iteration_duration.............: avg=897.53ms min=605.86ms med=847.56ms max=5.22s    p(90)=1.18s    p(95)=1.19s   
+    iterations.....................: 165   31.540209/s
+    vus............................: 31    min=31       max=31
+    vus_max........................: 31    min=31       max=31
+
+    NETWORK
+    data_received..................: 38 kB 7.2 kB/s
+    data_sent......................: 26 kB 4.9 kB/s
+
+
+
+
+running (00m05.3s), 00/31 VUs, 164 complete and 31 interrupted iterations
+monitor Γ£ù [   0% ] 1 VUs   00m05.2s/30m0s
+signers Γ£ù [   0% ] 30 VUs  00m05.2s/30m0s
+time="2026-04-14T22:29:51+04:00" level=error msg="test aborted: All transactions signed - test complete at monitorCompletion (file:///C:/Users/Davit%20Gabrielyan/source/repos/TransactionSign/backend/TransactionSign.Tests/LoadTests/k6-workflow.js:177:24(88))"

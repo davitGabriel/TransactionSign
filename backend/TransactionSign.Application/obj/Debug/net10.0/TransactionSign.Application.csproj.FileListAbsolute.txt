@@ -1,0 +1,15 @@
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\bin\Debug\net10.0\TransactionSign.Application.deps.json
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\bin\Debug\net10.0\TransactionSign.Application.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\bin\Debug\net10.0\TransactionSign.Application.pdb
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\bin\Debug\net10.0\TransactionSign.Domain.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\bin\Debug\net10.0\TransactionSign.Domain.pdb
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.csproj.AssemblyReference.cache
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.AssemblyInfoInputs.cache
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.AssemblyInfo.cs
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.csproj.CoreCompileInputs.cache
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\Transact.4A2C351E.Up2Date
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\refint\TransactionSign.Application.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\TransactionSign.Application.pdb
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Application\obj\Debug\net10.0\ref\TransactionSign.Application.dll

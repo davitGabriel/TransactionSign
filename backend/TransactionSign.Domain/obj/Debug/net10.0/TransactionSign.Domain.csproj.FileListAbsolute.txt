@@ -1,0 +1,11 @@
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\bin\Debug\net10.0\TransactionSign.Domain.deps.json
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\bin\Debug\net10.0\TransactionSign.Domain.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\bin\Debug\net10.0\TransactionSign.Domain.pdb
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\TransactionSign.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\TransactionSign.Domain.AssemblyInfoInputs.cache
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\TransactionSign.Domain.AssemblyInfo.cs
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\TransactionSign.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\TransactionSign.Domain.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\refint\TransactionSign.Domain.dll
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\TransactionSign.Domain.pdb
+C:\Users\Davit Gabrielyan\source\repos\TransactionSign\backend\TransactionSign.Domain\obj\Debug\net10.0\ref\TransactionSign.Domain.dll

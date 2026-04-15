@@ -1,0 +1,32 @@
+========================================
+  DATABASE VALIDATION REPORT
+========================================
+ 
+SUMMARY
+--------
+Total Transactions,Completed,Pending,Issues Found,Required Signatures,Result
+------------------,---------,-------,------------,-------------------,------
+10,10,0,0,2,PASS
+ 
+TRANSACTION DETAILS
+--------------------
+Status: 0=Pending, 1=PartiallyApproved, 2=Completed
+ 
+TxId,Amount,Status,Sigs,Signers,Finalized,Settled,Fee
+----,------,------,----,-------,---------,-------,---
+1,5,000.00,Complete,2,2,Yes,Yes,Yes
+2,25,000.00,Complete,2,2,Yes,Yes,Yes
+3,75,000.00,Complete,2,2,Yes,Yes,Yes
+4,1,500.00,Complete,2,2,Yes,Yes,Yes
+2244,10,000.00,Complete,2,2,Yes,Yes,Yes
+2245,5,000.00,Complete,2,2,Yes,Yes,Yes
+2246,14,000.00,Complete,2,2,Yes,Yes,Yes
+2247,25,000.00,Complete,2,2,Yes,Yes,Yes
+2248,5,000.00,Complete,2,2,Yes,Yes,Yes
+2251,1,000.00,Complete,2,2,Yes,Yes,Yes
+ 
+ISSUES
+-------
+No issues detected.
+ 
+========================================

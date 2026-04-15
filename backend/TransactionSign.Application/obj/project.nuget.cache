@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rGdNiG9SUbA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Davit Gabrielyan\\source\\repos\\TransactionSign\\backend\\TransactionSign.Application\\TransactionSign.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Davit Gabrielyan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\Davit Gabrielyan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.5\\microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

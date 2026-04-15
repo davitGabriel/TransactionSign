@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="TransactionSign.Api/TransactionSign.Api.csproj" />
+  <Project Path="TransactionSign.Application/TransactionSign.Application.csproj" />
+  <Project Path="TransactionSign.Domain/TransactionSign.Domain.csproj" />
+  <Project Path="TransactionSign.Infrastructure/TransactionSign.Infrastructure.csproj" />
+  <Project Path="TransactionSign.Tests/TransactionSign.Tests.csproj" />
+</Solution>
